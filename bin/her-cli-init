@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+const os = require('os');
+
+const download = require('download-git-repo');
+const program = require('commander');
+const ora = require('ora');
+const chalk = require('chalk');
+const inquirer = require('inquirer');
+const rimraf = require('rimraf');
+
+const logger = require('../lib/logger.js');
+
+const exists = fs.existsSync;
+const rm = rimraf.sync;
+const projectName = program.parse(process.argv).args[0];
+
+if (!projectName) {
+  console.log(`> Use ${chalk.yellow('her-cli-init <name> ')}to create a wxapp project`);
+  return;
+}
+
+let template = 'https://github.com/TJ-XiaJiaHao/wx-parser-template.git';
+downloadAndGenerate(template, projectName);
+
+
+function downloadAndGenerate (template, name) {
+  const spinner = ora('downloading template');
+  spinner.start();
+  // Remove if local template exists
+  if (exists(name)) {
+    rm(name);
+  }
+  download('direct:' + template, name, { clone: true }, function (err) {
+    spinner.stop();
+    if (err) {
+      return logger.fatal('Failed to download repo ' + template + ': ' + err.message.trim());
+    }
+    logger.success('Created "%s".', name);
+    console.log(`   then run: \n      ${chalk.green('cd ' + name + '\n      npm install' + '\n      npm run dev')}`)
+  });
+}

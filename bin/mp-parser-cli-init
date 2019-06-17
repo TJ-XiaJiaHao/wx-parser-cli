@@ -19,7 +19,7 @@ const rm = rimraf.sync;
 const projectName = program.parse(process.argv).args[0];
 
 if (!projectName) {
-  console.log(`> Use ${chalk.yellow('wx-parser-cli-init <name> ')}to create a wxapp project`);
+  console.log(`> Use ${chalk.yellow('mp-parser-cli-init <name> ')}to create a wxapp project`);
   return;
 }
 

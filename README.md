@@ -4,11 +4,11 @@
 #### Installation
 
 ```
-npm install -g wx-parser-cli
+npm install -g mp-parser-cli
 ```
 
 #### Usage
 
 ```
-wx-parser-cli-init <name>
+mp-parser-cli-init <name>
 ```

@@ -1,14 +1,14 @@
 {
-  "name": "wx-parser-cli",
-  "version": "1.0.0",
+  "name": "mp-parser-cli",
+  "version": "1.0.1",
   "description": "A simple CLI for wxapp",
   "keywords": [
     "cli",
     "wxapp"
   ],
   "bin": {
-    "wx-parser-cli": "bin/wx-parser-cli",
-    "wx-parser-cli-init": "bin/wx-parser-cli-init"
+    "mp-parser-cli": "bin/mp-parser-cli",
+    "mp-parser-cli-init": "bin/mp-parser-cli-init"
   },
   "scripts": {},
   "repository": {
@@ -26,6 +26,6 @@
     "inquirer": "^6.2.0",
     "ora": "^3.0.0"
   },
-  "author": "Tvinsh",
+  "author": "XJH",
   "license": "MIT"
 }

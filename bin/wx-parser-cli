@@ -10,7 +10,7 @@ program
   .parse(process.argv);
 
 if (!program.help) {
-	console.log(`you can use ${chalk.green('her-cli-init <name>')} to create a wxapp project`);
+	console.log(`you can use ${chalk.green('wx-parser-cli-init <name>')} to create a wxapp project`);
 } else {
 	console.log(chalk.yellow('you can use -h or --help for help'));
 }

@@ -4,15 +4,11 @@
 #### Installation
 
 ```
-npm install -g her-wxapp-cli
+npm install -g wx-parser-cli
 ```
 
 #### Usage
 
 ```
-her-cli-init <name>
+wx-parser-cli-init <name>
 ```
-
-#### License
-
-[MIT](https://opensource.org/licenses/MIT)

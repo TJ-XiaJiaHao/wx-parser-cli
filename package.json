@@ -1,19 +1,19 @@
 {
-  "name": "her-wxapp-cli",
-  "version": "1.0.5",
+  "name": "wx-parser-cli",
+  "version": "1.0.0",
   "description": "A simple CLI for wxapp",
   "keywords": [
     "cli",
     "wxapp"
   ],
   "bin": {
-    "her-cli": "bin/her-cli",
-    "her-cli-init": "bin/her-cli-init"
+    "wx-parser-cli": "bin/wx-parser-cli",
+    "wx-parser-cli-init": "bin/wx-parser-cli-init"
   },
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "http://git.code.oa.com/her/her-wxapp-cli.git"
+    "url": "https://github.com/TJ-XiaJiaHao/wx-parser-cli.git"
   },
   "files": [
     "lib/",
